@@ -15,4 +15,7 @@ const fetchAdvice = async () => {
 };
 fetchAdvice();
 
-button.addEventListener("click", fetchAdvice);
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  fetchAdvice();
+});
