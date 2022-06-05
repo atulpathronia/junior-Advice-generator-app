@@ -18,4 +18,5 @@ fetchAdvice();
 button.addEventListener("click", (e) => {
   e.preventDefault();
   fetchAdvice();
+  e.defaultPrevented();
 });
